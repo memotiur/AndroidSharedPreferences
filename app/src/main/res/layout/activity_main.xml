@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.gdgbangla.motiur.sharedpreference.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoComplete"
+        android:ems="10"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:id="@+id/etname"
+     />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Age"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/etage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:onClick="save"
+                android:textColor="#fff"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/button" />
+
+            <Button
+                android:text="View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:onClick="view"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/button2" />
+
+            <Button
+                android:text="Remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:onClick="remove"
+                android:layout_weight="1" />
+        </LinearLayout>
+</LinearLayout>
